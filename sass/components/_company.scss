@@ -1,0 +1,68 @@
+// Company
+.company {
+    @extend %container;
+    @extend %section;
+    max-width: 480px;
+
+    @include table{
+      max-width: 768px;
+    }
+    @include desctop{
+      max-width: 1200px;
+    }
+
+  }
+  .company__subtitle {
+    @extend %subtitle;
+  }
+  .customers-list {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    @include desctop{
+      width: 100%;
+      }
+  }
+  .customers-list__item{
+    flex-basis: calc((100% - 30px) / 2);
+
+    @include table{
+      flex-basis: calc((100% - 60px) / 3);
+    }
+     
+    @include desctop{
+      flex-basis: auto;
+      }
+  }
+  .customers-list__block {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $link-coolor;
+    border-radius: 4px;
+    width: 100%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: $link-coolor;
+  
+    transition-property: color, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      border: 1px solid $accent-color;
+    }
+
+    @include desctop{
+      width: 170px;
+
+    }
+  }
+  .customers-list__icon {
+    fill: currentColor;
+    height: 60px;
+    width: 106px;
+  }

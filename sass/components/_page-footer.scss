@@ -1,0 +1,137 @@
+// Footer
+.page-footer{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $accent-bg-color;
+    min-width: 320px;
+  }
+  .page-footer__container{
+    @extend %container;
+    @include desctop{
+      display: flex;
+      align-items: center;
+    }
+  }
+  .location__block{
+    text-align: center;
+    margin-bottom: 60px;
+
+    @include desctop{
+      margin-right: 70px;
+      margin-bottom: 0;
+    }
+  }
+  .address-list {
+    @extend %list;
+    font-size: 14px;
+    line-height: 1.7em;
+    letter-spacing: 0.03em;
+    font-style: normal;
+
+    @include desctop{
+      text-align: start;
+    }
+  }
+  .address-list__item:not(:last-child){
+    margin-bottom: 9px;
+  }
+  .address-list__link{
+    @extend %link;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .address-list__link--map{
+    color: $additional-color;
+  }
+.social-block{
+  margin-bottom: 60px;
+
+  @include desctop{
+    margin-bottom: 0;
+  }
+}
+  .social-block__title{
+    font-size: 14px;
+    line-height: 1.1em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $additional-color;
+  }
+  .page-footer__title{
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  @include desctop{
+    .form-block{
+      margin-left: 93px;
+    }
+  }
+  .form-block{
+    max-width: 480px;
+    margin: 0 auto;
+
+  }
+  .form{
+    @include desctop{
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+  @include desctop{
+    .form__posit{
+      display: flex;
+      flex-direction: column;
+  
+    }
+  }
+  .form__title{
+    display: block;
+    text-align: center; 
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1em;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $additional-color;
+    margin-bottom: 20px;
+
+    @include desctop{
+      text-align: start;
+    }
+  }
+  .form__style{
+    width: 100%;
+    height: 50px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+  
+    font-size: 16px;
+    line-height: 1.3em;
+    letter-spacing: 0.03em;
+  
+    color: $additional-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+
+    @include desctop{
+      width: 358px;
+      margin-bottom: 0;
+    }
+  }
+  .form__button{
+    margin: 0 auto;
+
+    @include desctop{
+      margin-left: 12px;
+    }
+  }
+
+  @include table{
+    .table{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }

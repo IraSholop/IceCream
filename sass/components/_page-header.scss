@@ -1,0 +1,21 @@
+// Header 
+.page-header {
+  position: relative;
+    border-bottom: 1px solid #ececec;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1em;
+    letter-spacing: 0.02em;
+
+  }
+  .page-header__container {
+    @extend %container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include table{
+      justify-content: flex-start;
+    }
+  }
+  

@@ -1,0 +1,67 @@
+.background {
+    background-color: $accent-bg-color;
+  }
+  .hero {
+    text-align: center;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    
+
+    @include desctop{
+      padding-top:  200px;
+      padding-bottom: 200px;
+    }
+  }
+  .hero__container {
+    @extend %container;
+    max-width: 480px;
+
+     @include desctop{
+      max-width: 1200px;
+      text-align: center;
+     }
+  }
+  .hero--img {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    image-set("../images/Header_1.jpg" 1x,
+    "../images/Header_1@2x.jpg" 2x);
+    background-color: #c4c4c4;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include table{
+      max-width: 768px;
+      background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("../images/Header_2.jpg" 1x,
+      "../images/Header_2@2x.jpg" 2x);
+    }
+    @include desctop{
+      max-width: 1200px;
+      background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("../images/Heder_3.jpg" 1x,
+      "../images/Heder_3@2x.jpg" 2x);
+    }
+  }
+  .hero__title {
+    color: $additional-color;
+    width: 100%;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.6em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @include desctop{
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.4em;
+    }
+  }
+  .main-page__title {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
