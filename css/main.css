@@ -806,12 +806,7 @@ img {
   }
 }
 
-.background {
-  background-color: #2f303a;
-}
-
 .hero {
-  background-color: #2f303a;
   width: 100%;
   text-align: center;
   padding-top: 118px;
@@ -835,20 +830,17 @@ img {
 }
 
 .hero--img {
-  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set("../images/Header_1.jpg" 1x, "../images/Header_1@2x.jpg" 2x);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/Header_1.jpg") 1x, url("../images/Header_1@2x.jpg") 2x);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("../images/Header_1.jpg" 1x, "../images/Header_1@2x.jpg" 2x);
-  background-color: #c4c4c4;
+  background-color: #2f303a;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .hero--img {
-    max-width: 768px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set("../images/Header_2.jpg" 1x, "../images/Header_2@2x.jpg" 2x);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/Header_2.jpg") 1x, url("../images/Header_2@2x.jpg") 2x);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("../images/Header_2.jpg" 1x, "../images/Header_2@2x.jpg" 2x);
@@ -856,7 +848,6 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero--img {
-    max-width: 1600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set("../images/Heder_3.jpg" 1x, "../images/Heder_3@2x.jpg" 2x);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/Heder_3.jpg") 1x, url("../images/Heder_3@2x.jpg") 2x);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("../images/Heder_3.jpg" 1x, "../images/Heder_3@2x.jpg" 2x);
