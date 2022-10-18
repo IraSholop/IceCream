@@ -10,6 +10,11 @@ html {
     font-family: $primary-font;
     background-color: $primary-bg-color;
     color: $primary-color;
+
+  }
+  body.modal-open,
+  body.menu-open{
+    overflow: hidden;
   }
   img {
     display: block;

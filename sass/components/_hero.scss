@@ -2,6 +2,8 @@
     background-color: $accent-bg-color;
   }
   .hero {
+    background-color: $accent-bg-color;
+    width: 100%;
     text-align: center;
     padding-top: 118px;
     padding-bottom: 118px;
@@ -39,7 +41,7 @@
       "../images/Header_2@2x.jpg" 2x);
     }
     @include desctop{
-      max-width: 1200px;
+      max-width: 1600px;
       background-image:linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set("../images/Heder_3.jpg" 1x,
       "../images/Heder_3@2x.jpg" 2x);
     }
